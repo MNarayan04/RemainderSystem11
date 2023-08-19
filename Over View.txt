@@ -1,0 +1,15 @@
+Hello Ma'am,
+
+I have Completed the task " Remainder Based System" and its Over View is as below Following Points
+
+1) Create a "login.html" where user can enter its login id and password . { Created Two JS function named checkpass() to check password length and its security measure and checkname() to check wheather the login is having address or not}
+
+2) After Flling Detail and clicking on login Button you will be direct to "index.html" which is the main interfce of this task
+
+3) IN this 1st select date , then write task  and then write some description  about it 
+
+4) Press Enter the detail will be added in same page(only main Remainder name)below 'Remainder ' heading and also in Database(google Excel)
+  
+5)In main interface you can edit , delete  , disable the Remainder
+
+6)All the data in save in Database(Google Drive)
