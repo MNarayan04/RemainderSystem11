@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Index</title>
+
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+	
+	<header>
+		<h1>Remainder List 2023  </h1>
+		<form id="new-task-form" action="https://script.google.com/macros/s/AKfycbxYtauU2PNF-bY9iFMdQZPiqWJUbghliij0ZiWBojApueLzYN4B4ueuR6Ridh4UYj0X/exec">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="What do you have planned?" />
+				<input type="date" name="" id="">
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="Add task"  onclick="okk()"/>
+				<br>
+				<br>
+		</form>
+		<br>
+		<br>
+		Description 
+		<br>
+
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <textarea name="" id="" cols="15" rows="5"></textarea>
+	</header>
+	<main>
+		<section class="task-list">
+			<h2>Remainder
+            </h2>
+
+			<div id="tasks">
+
+				
+
+			</div>
+		</section>
+	</main>
+    <footer>
+        <button> <a href="./login.html"> Back </a></button>
+        <button> <a href="./logout.html">Log Out</a> </button>
+		<button> <a href="https://script.google.com/macros/s/AKfycbxYtauU2PNF-bY9iFMdQZPiqWJUbghliij0ZiWBojApueLzYN4B4ueuR6Ridh4UYj0X/exec">View Remainder</a> </button>
+    </footer>
+
+
+	<script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxYtauU2PNF-bY9iFMdQZPiqWJUbghliij0ZiWBojApueLzYN4B4ueuR6Ridh4UYj0X/exec'
+			const form = document.forms['formName']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thank you! your form is submitted successfully." ))
+				.then(() => {  window.location.reload(); })
+				.catch(error => console.error('Error!', error.message))
+			})
+    </script>
+
+	<script src="main.js"></script>
+</body>
+</html>
